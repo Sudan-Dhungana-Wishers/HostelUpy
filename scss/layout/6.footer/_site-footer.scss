@@ -1,0 +1,50 @@
+// .site__tfooter {
+// 	background: $muted;
+// 	display: flex;
+// 	justify-content: flex-end;
+// 	font-size: 12px;
+// 	padding: 20px 0 0;
+// }
+
+// .site__footer {
+// 	color: $muted;
+// 	padding: 30px 0 0;
+// }
+
+.site__footer {
+	color: $default;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	z-index: 0;
+
+	.tpl--access & {
+		padding: 20px 0 0;
+		position: static;
+		color: $muted;
+	}
+
+	.copy {
+		display: block;
+		font-size: 12px;
+	}
+
+	a {
+		@include inline-block(middle);
+		width: 25px;
+	}
+
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.site__tfooter {
+	background: $muted;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 12px;
+	padding: 20px 0 0;
+}

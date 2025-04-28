@@ -1,0 +1,99 @@
+.tpl--access {
+	background: $primary;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px 0;
+}
+
+.access {
+	&__portal {
+		background: $white;
+		border-radius: 10px;
+		width: 300px;
+		padding: 20px;
+		@include media('>=420px') {
+			width: 382px;
+			padding: 30px;
+		}
+
+		.site-logo {
+			margin: 0 auto 40px;
+			width: 126px;
+
+
+			a {
+				display: block;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	&__form {
+		.form {
+			&__module {
+				margin: 0 0 40px;
+				position: relative;
+				z-index: 0;
+			}
+
+			&__label {
+				background: $white;
+				padding: 0 6px;
+				position: absolute;
+				top: -13px;
+				left: 10px;
+				z-index: 1;
+			}
+			&__optionset {
+				margin: -10px 0 0;
+				padding: 0 0 20px;
+			}
+			&__action {
+				justify-content: center;
+
+				li {
+					width: 100%;
+				}
+
+				.button {
+					border-radius: 4px;
+					width: 100%;
+					text-transform: uppercase;
+				}
+			}
+
+			&__meta {
+				padding: 20px 0 0;
+				text-align: center;
+
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&__form-title {
+		.form-heading {
+			font-size: 24px;
+			text-align: center;
+			margin: 0 0 10px;
+		}
+		.sub-heading {
+			display: block;
+			justify-content: center;
+			font-size: 14px;
+			text-align: center;
+			margin: 0 0 50px;
+			font-weight: 400;
+		}
+	}
+}

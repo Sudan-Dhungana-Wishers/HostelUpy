@@ -1,0 +1,78 @@
+.ctgpanel {
+	padding: 0 16px;
+
+	&__title {
+		@include font-base-sb(20px,1.2em);
+		text-transform: capitalize;
+		color: $primary;
+		padding: 20px 0 0;
+	}
+
+	.tbl-wrap {
+		border-style: none;
+		#ctg {
+			&__table {
+				table-layout: fixed;
+				border-collapse: collapse;
+				border: none;
+				width: 100%;
+
+				.ctsn {
+					width: 50px;
+				}
+
+				.ctprice {
+					width: 70px;
+				}
+
+				.ctaction {
+					width: 70px;
+				}
+			}
+
+		}
+	}
+}
+.actionlist {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 5px;
+
+	.action-button {
+		background: none;
+		border: none;
+
+		.icon-view {
+			font-size: 10px;
+		}
+	}
+}
+.paging {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	list-style: none;
+
+	li {
+		padding: 18px 18px;
+
+		a {
+			color: $black;
+
+			.icon-prev {
+				font-size: 10px;
+			}
+
+			.icon-next {
+				font-size: 10px;
+			}
+		}
+	}
+}
+.icon-sorting {
+	font-size: 10px;
+}

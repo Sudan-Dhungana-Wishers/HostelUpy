@@ -1,0 +1,202 @@
+.dashboard {
+	padding: 10px;
+
+	&--main {
+		display: flex;
+	}
+
+	&__heading {
+		display: inline-block;
+	}
+
+	&__title {
+		padding: 0 0 0 10px;
+	}
+
+	&__wrap {
+		padding: 0 10px;
+
+		.dbRoom {
+			width: 66px;
+		}
+
+		.dbDesc {
+			width: 280px;
+		}
+
+		.dbStatus {
+			width: 100px;
+		}
+	}
+
+	.col {
+		margin: 0 0 20px;
+	}
+
+	.dirty {
+		background: $secondary-light;
+	}
+
+	.maintenance {
+		background: $tertiary-light;
+	}
+}
+
+.roomdetails {
+	height: 100%;
+	background: $white;
+	border-radius: 5px;
+	padding: 6px;
+
+	@include media(">=tablet") {
+		padding: 16px;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0 20px;
+
+		.icon-done {
+			font-size: 35px;
+
+			.vacant & {
+				color: $success;
+			}
+
+			.occupied & {
+				color: $info;
+			}
+
+			.checkin & {
+				color: $warning;
+			}
+
+			.checkout & {
+				color: $error;
+			}
+		}
+
+		button {
+			background: none;
+			border: none;
+
+			.icon-menu {
+				font-size: 10px;
+			}
+		}
+
+		.icon-cleaning {
+			font-size: 30px;
+			color: $error;
+		}
+
+		.icon-maintanance {
+			font-size: 30px;
+
+			.maintenance & {
+				color: $warning;
+			}
+		}
+	}
+
+	&__room-info {
+		@include font-base-sb(30px, 1.2);
+
+		.vacant & {
+			color: $success;
+		}
+
+		.occupied & {
+			color: $info;
+		}
+
+		.checkin & {
+			color: $warning;
+		}
+
+		.checkout & {
+			color: $error;
+		}
+
+		.dirty & {
+			color: $error;
+		}
+
+		.maintenance & {
+			color: $warning;
+		}
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		flex: 0 0 85px;
+		@include font-base-m(12px, 1.2);
+		margin: 0;
+		padding: 0 0 0 4px;
+
+		@include media(">=phone") {
+		padding: 0 0 0 10px;
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+
+	&__room-icon {
+		flex-basis: 0;
+		flex-grow: 1;
+		max-height: 100%;
+	}
+}
+.cash {
+	background: $primary;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__title {
+		color: $white;
+		@include font-base-m(20px, 1);
+		text-align: center;
+	}
+
+	&__currency {
+		display: inline-block;
+		vertical-align: top;
+		@include font-base-b(25px, 1);
+		color: $white;
+	}
+
+	&__total-cash {
+		@include font-base-b(35px, 1);
+		color: $white;
+	}
+}
+
+.dashboard-zpanel {
+	background: $white;
+	flex: 0 0 300px;
+	padding: 20px;
+
+	&__chart {
+		margin: 0 0 20px;
+	}
+
+	&__chart-heading {
+		@include font-base-sb(20px, 1)
+	}
+
+	&__list-heading {
+		@include font-base-sb(20px, 1)
+	}
+
+	&__all-list {
+		li {
+			padding: 14px;
+		}
+	}
+}

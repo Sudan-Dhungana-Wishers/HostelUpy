@@ -1,0 +1,153 @@
+// Colors
+// Color calculator - https://razorltd.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+// Color names - https://chir.ag/projects/name-that-color/
+// svgminifier
+// https://petercollingridge.appspot.com/svg-optimiser
+
+
+$forest-green:			#2baa3d; // success greenz
+$blood-red:				#fa0000; // error red
+$yellow-sea:			#fdb000; // warning yellow
+$picton-blue:			#21b6ea; // info light blue color
+
+$black:					#000;
+$white:					#fff;
+$offblack:				#1b1b1e;
+$offwhite:				#edecfe;
+$success:				$forest-green;
+$error:					$blood-red;
+$warning:				$yellow-sea;
+$info:					$picton-blue;
+$light-green:			#f4fff6;
+$light-red:				#fff0f0;
+
+
+
+//black variation
+$default:				#555;
+$base:					#f0f0f0;
+
+$primary:				#00435b;
+$primary-variant:		#003c51;
+$primary-light:			#8ae3b5;
+
+$secondary:				#286276;
+$secondary-variant:		$blood-red;
+$secondary-light:		#ffd7d7;
+
+$tertiary:				$forest-green;
+$tertiary-variant:		#286276;
+$tertiary-light:		#fff3d8;
+
+
+//white grey variation
+$muted:					#f7f7f7;
+$light:					#f9f9f9;
+$medium:				#a4a4a4;
+$dark:					#272b2a;
+
+$gray:					#666666;
+$gray-variant:			#dedede;
+
+
+// site font
+$font-base: 'Noto Sans', sans-serif;
+$font-sub: 'El Messiri', sans-serif;
+// $font-primary: 'DM Serif Text', serif;
+// $font-alter:;
+
+$urlLocal:									"../";
+$urlSite:									"../theme/assets/";
+
+
+$urlBase:									$urlLocal !default;
+
+// $base-font-sans-serif:						'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-sans-serif:						$font-base;
+$base-font-serif:							'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+
+// Body
+$base-text-color:							$default;
+$base-background-color:			 			$primary;
+$watermark-background-color:				darken($white, 20%) !default;
+$font-size-base:							16px !default;
+$line-height-base:							1 !default;
+$base-font-family:							$base-font-sans-serif !default;
+
+$vertical-rhythm:							($line-height-base * 1em);
+
+// page min-width
+$base-min-width:							320px;
+
+// Links
+$base-link-color:							$primary;
+
+// Buttons 
+// $btn-color:									$white !default;
+// $btn-background:							$primary !default;
+$btn-padding:								0.4em 0.7em !default;
+// $btn-font-size:								inherit !default;
+
+// Forms
+$form-element-background:					$white !default;
+$form-element-padding:						0.4em 1em !default;
+$form-element-border-color:					#dedede !default;
+$form-element-focus-border-color:			$primary !default;
+$form-element-text-color:					$black !default;
+$form-element-error-color:					$error !default;
+$placeholder-color:							#666 !default;
+
+// Headers
+$h1-font-size:								36px !default;
+$h2-font-size:								36px !default;
+$h3-font-size:								30px !default;
+$h4-font-size:								18px !default;
+$h5-font-size:								17px !default;
+$h6-font-size:								15px !default;
+
+$headings-font-family:						$font-sub;
+$headings-color:							$black;
+
+$animation-speed:							0.3s;
+
+
+
+// site theming
+
+//** Number of columns in the grid.
+$grid-columns: 12;
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-xs:							8px;
+$grid-gutter-sx:							12px;
+$grid-gutter-sm:							$grid-gutter-sx;
+$grid-gutter-md:							$grid-gutter-sm;
+$grid-gutter-sd:							20px;
+$grid-gutter-lg:							22px;
+
+
+$container-size:							1200px;
+
+
+//## Define 'breakpoint' width for different screen sizes.
+// mobile and up
+$container-xs:								480px;
+
+// mobile landscape and up
+$container-sx:								576px;
+
+// Small screen / tablet and up
+$container-sm:								768px;
+
+// Medium screen / desktop and up
+$container-md:								992px;
+
+// Semi large screen / semi-desktop and up
+$container-sd:								1024px;
+
+// Large screen / wide desktop and up
+$container-lg:								1200px;
+
+// // Extra Large screen / widescree desktop and up
+// $container-lg:								1500px;

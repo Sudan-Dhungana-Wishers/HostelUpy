@@ -1,0 +1,10 @@
+.roomreservepanel {
+	width: 800px;
+	height: 70vh;
+	padding: 20px 0;
+
+	&__action {
+		display: flex;
+		justify-content: flex-end;
+	}
+}

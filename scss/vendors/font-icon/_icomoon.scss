@@ -1,0 +1,104 @@
+@font-face {
+	font-family: 'icomoon';
+	src:  url($urlBase + 'fonts/icomoon.eot?fbob2h');
+	src:  url($urlBase + 'fonts/icomoon.eot?fbob2h#iefix') format('embedded-opentype'),
+	url($urlBase + 'fonts/icomoon.ttf?fbob2h') format('truetype'),
+	url($urlBase + 'fonts/icomoon.woff?fbob2h') format('woff'),
+	url($urlBase + 'fonts/icomoon.svg?fbob2h#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"], [class*="icon-"], [class*="dd-icon-"] {
+	@extend .icon;
+}
+.icon {
+  font-family: 'icomoon' !important;
+  display: inline-block;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  // Better Font Rendering ===========
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // transition: color 0.3s ease-in-out;
+}
+.icon-menu:before {
+  content: "\e917";
+}
+.icon-date:before {
+  content: "\e916";
+}
+.icon-inventory:before {
+  content: "\e918";
+}
+.icon-add:before {
+  content: "\e900";
+}
+.icon-addprofile:before {
+  content: "\e901";
+}
+.icon-billing:before {
+  content: "\e902";
+}
+.icon-cleaning:before {
+  content: "\e903";
+}
+.icon-dashboard:before {
+  content: "\e904";
+}
+.icon-delete:before {
+  content: "\e905";
+}
+.icon-done:before {
+  content: "\e906";
+}
+.icon-download:before {
+  content: "\e907";
+}
+.icon-dropdown:before {
+  content: "\e908";
+}
+.icon-edit:before {
+  content: "\e909";
+}
+.icon-filter:before {
+  content: "\e90a";
+}
+.icon-frontdesk:before {
+  content: "\e90b";
+}
+.icon-maintanance:before {
+  content: "\e90c";
+}
+.icon-notification:before {
+  content: "\e90d";
+}
+.icon-plus:before {
+  content: "\e90e";
+}
+.icon-profile:before {
+  content: "\e90f";
+}
+.icon-search:before {
+  content: "\e910";
+}
+.icon-setting:before {
+  content: "\e911";
+}
+.icon-sorting:before {
+  content: "\e912";
+}
+.icon-view:before {
+  content: "\e913";
+}
+.icon-next:before {
+  content: "\e914";
+}
+.icon-prev:before {
+  content: "\e915";
+}

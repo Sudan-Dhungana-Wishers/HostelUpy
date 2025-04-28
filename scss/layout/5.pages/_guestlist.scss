@@ -1,0 +1,55 @@
+.guestpanel {
+	padding: 0;
+}
+
+.guest {
+	&__collection {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 50px;
+	}
+
+	&__set {
+		display: flex;
+	}
+
+	&__group {
+		display: flex;
+		gap: 20px;
+	}
+}
+
+#list-table {
+	.gtSn {
+		width: 56px;
+	}
+
+	.gtAction {
+		width: 120px;
+	}
+
+	.gtId {
+		width: 80px;
+	}
+
+	.gtName {
+		width: 250px;
+	}
+
+	.gtStatus {
+		width: 120px;
+	}
+
+	.gtRoomno {
+		width: 100px;
+	}
+
+	.gtQuantity {
+		width: 200px;
+	}
+
+	.gtMin-qty {
+		width: 200px;
+	}
+}
