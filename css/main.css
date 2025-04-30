@@ -3017,9 +3017,6 @@ header main form {
   box-shadow: 0px 0px 12px grey;
   border-radius: 13px; }
   header main form label {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     font-family: 'Poppins', sans-serif; }
   header main form .logo__still {
     margin: 0 auto;
