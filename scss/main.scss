@@ -11,7 +11,7 @@
 // |enable header, nav, footer & req. vendors	|
 // ---------------------------------------------
 
-@import 'core/base/core';
+// @import 'core/base/core';
 @import 'core/base/normalize';
 @import 'vendors/font-icon/icomoon';
 
@@ -35,7 +35,7 @@
 @import 'layout/3.module/button';
 @import 'layout/3.module/dashpanel';
 @import 'layout/3.module/table';
-// @import 'layout/3.module/text-color';
+@import 'layout/3.module/text-color';
 // @import 'layout/3.module/alert';
 // @import 'layout/3.module/breadcrumb';
 // @import 'layout/3.module/pagination';
@@ -56,6 +56,9 @@
 // @import 'layout/1.header/site-search';
 
 // @import 'layout/2.nav/nav';
+
+// added my me
+@import 'layout/3.module/admin-login';
 
 // @import 'layout/4.unit/prime';
 // @import 'layout/4.unit/headline';
