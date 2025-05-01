@@ -3036,6 +3036,12 @@ header main .form__container {
         width: 100%;
         height: 100%;
         object-fit: contain; }
+        header main .form__container form .logo__still img:hover {
+          -webkit-transition: color 0.3s ease-in-out;
+          transition: color 0.3s ease-in-out; }
+          header main .form__container form .logo__still img:hover:hover {
+            text-decoration: none;
+            color: azure; }
     header main .form__container form .line {
       height: 1px;
       background: #e0e0e0;
@@ -3590,7 +3596,7 @@ header main .form__container {
     display: flex;
     gap: 24px; }
 
-.room__creat {
+.room__create {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
