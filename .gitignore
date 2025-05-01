@@ -3,3 +3,8 @@ dist/
 build/
 .env
 *.log
+* text eol=lf
+* text=auto
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
