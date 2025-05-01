@@ -3000,45 +3000,55 @@ a {
 .bg-warning {
   background: #fdb000; }
 
-header main .form__container form {
+header main .form__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 5%;
-  left: 30%;
-  right: 30%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  padding: 20px;
-  gap: 10px;
-  box-shadow: 0px 0px 12px grey;
-  border-radius: 13px; }
-  header main .form__container form label {
-    font-family: 'Poppins', sans-serif; }
-  header main .form__container form .logo__still {
-    margin: 0 auto;
-    width: 250px;
-    height: 240px; }
-    header main .form__container form .logo__still img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; }
-  header main .form__container form .line {
-    height: 1px;
-    background: #e0e0e0;
-    margin: 1rem 0; }
-  header main .form__container form input {
-    padding: 10px;
-    border: none;
-    background: whitesmoke;
-    border-radius: 8px; }
-  header main .form__container form input:focus {
-    outline: 2px solid #84c2ff; }
-  header main .form__container form button span {
-    font-size: 1rem; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 90vh;
+  margin: 0; }
+  header main .form__container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    box-shadow: 0px 0px 12px grey;
+    border-radius: 13px;
+    max-width: 600px;
+    width: 100%; }
+    header main .form__container form label {
+      font-family: 'Poppins', sans-serif; }
+    header main .form__container form .logo__still {
+      margin: 0 auto;
+      width: 250px;
+      height: 240px; }
+      header main .form__container form .logo__still img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    header main .form__container form .line {
+      height: 1px;
+      background: #e0e0e0;
+      margin: 1rem 0; }
+    header main .form__container form input {
+      padding: 10px;
+      border: none;
+      background: whitesmoke;
+      border-radius: 8px; }
+    header main .form__container form input:focus {
+      outline: 2px solid #84c2ff; }
+    header main .form__container form button span {
+      font-size: 1rem; }
 
 .tpl--access {
   background: #00435b;
