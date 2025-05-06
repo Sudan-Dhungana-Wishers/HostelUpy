@@ -36,12 +36,12 @@
 @import 'layout/3.module/dashpanel';
 @import 'layout/3.module/table';
 @import 'layout/3.module/text-color';
-// @import 'layout/3.module/alert';
-// @import 'layout/3.module/breadcrumb';
-// @import 'layout/3.module/pagination';
-// @import 'layout/3.module/rating';
-// @import 'layout/3.module/toast';
-// @import 'layout/3.module/tag';
+@import 'layout/3.module/alert';
+@import 'layout/3.module/breadcrumb';
+@import 'layout/3.module/pagination';
+@import 'layout/3.module/rating';
+@import 'layout/3.module/toast';
+@import 'layout/3.module/tag';
 
 
 
@@ -52,7 +52,7 @@
 // @import 'vendors/daterangepicker/daterangepicker';
 
 
-@import 'layout/1.header/site-header';
+// @import 'layout/1.header/site-header';
 // @import 'layout/1.header/site-search';
 
 // @import 'layout/2.nav/nav';
