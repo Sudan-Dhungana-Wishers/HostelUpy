@@ -1,13 +1,15 @@
-header {
-	main {
-		.form__container {
+$spinner-width: 18px;
+$spinner-height: 20px;
+
+main {
+	.form__container {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		min-height: 90vh;
+		margin: 0;
+		form {
 			display: flex;
-			justify-content: center;
-			align-items: flex-start;
-			min-height: 90vh;
-			margin: 0;
-			form {
-				display: flex;
 				// position: absolute;
 				// top: 5%;
 				// left: 30%;
@@ -69,4 +71,33 @@ header {
 		}
 	}
 }
+.spinner {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: spinner-width;
+	height: spinner-height;
+
+	animation-name: animSpinner;
 }
+
+@keyframes spinner__anim {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner__anim {
+	display: flex;
+	position: relative;
+	height: $spinner-height ;
+	width: $spinner-width;
+}
+
+div {
+	animation: spinner__anim 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}	
